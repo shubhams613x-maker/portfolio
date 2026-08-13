@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Sharma | Projects Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #030814;
+        color: white;
+        line-height: 1.6;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(3, 8, 20, 0.55);
+        z-index: -1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    header {
+        background-image: url("images/navbg.jpg");
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 15px 8%;
+        z-index: 1000;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    nav img {
+
+        width: 90px;
+        height: 90px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #38bdf8;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero span {
+        color: #38bdf8;
+    }
+
+    .hero p {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #38bdf8;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #0284c7;
+    }
+
+    section {
+        padding: 80px 8%;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #38bdf8;
+    }
+
+    .about p {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 25px;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+    }
+
+    .card h3 {
+        color: #38bdf8;
+        margin-bottom: 10px;
+    }
+
+    .skill-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .skill-list span {
+        background: #1e293b;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    footer {
+        background: #111827;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    @media(max-width:768px) {
+        nav {
+            flex-direction: column;
+        }
+
+        nav ul {
+            margin-top: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+    }
+</style>
+
+<body>
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="video/dev..mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <nav>
+            <img src="images/558b1e2d-679e-4b48-ad81-0773efe10ce7.png" alt="">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Shubham Sharma</span></h1>
+            <p>B.Tech CSE Student | Frontend Developer | HTML & CSS Projects</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            ## About Me
+
+            I am a **Computer Science student** with a strong passion for **web development, graphic design, and digital
+            creativity**. I enjoy building modern, responsive, and user-friendly websites using **HTML and CSS**, while
+            continuously improving my front-end development skills.
+
+            Along with web development, I have a solid understanding of **computer fundamentals, software applications,
+            internet technologies, and basic troubleshooting**, which helps me work efficiently across different digital
+            platforms.
+
+            I also work as a **graphic designer**, creating visually appealing designs, social media creatives, banners,
+            posters, and branding materials. I believe that great design and clean code go hand in hand to create
+            impactful digital experiences.
+
+            My goal is to keep learning new technologies, strengthen my development and design skills, and build
+            projects that are both functional and visually impressive.
+
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="card">
+
+                <a href="http://127.0.0.1:5500/COMPLETEBASEPAGE.html">
+                    <h3>Html and Css Project </h3>
+                </a>
+
+</Html>
+
+</div>
+
+<div class="card">
+
+    <a href="http://127.0.0.1:5500/nicepagebootstrap.html">
+        <h3>Bootstrap Project</h3>
+    </a>
+</div>
+
+<div class="card">
+    <h3>Image Gallery</h3>
+    <p>Responsive gallery using CSS Grid and Flexbox.</p>
+</div>
+
+<div class="card">
+    <h3>College Project</h3>
+    <p>Academic project showcase with screenshots and descriptions.</p>
+</div>
+
+</div>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Bootstrap</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: shubhams.613x@gmail.com</p>
+    <p>Phone: +91 8360568056</p>
+</section>
+
+<footer>
+    <p>© 2026 Shubham Sharma. All Rights Reserved.</p>
+</footer>
+
+</body>
+
+</html>
