@@ -16,16 +16,21 @@
     }
 
     body {
-        background: #030814;
-        color: white;
-        line-height: 1.6;
+        background:
+            radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.35), transparent 40%),
+            radial-gradient(circle at 80% 10%, rgba(56, 189, 248, 0.30), transparent 35%),
+            radial-gradient(circle at 70% 80%, rgba(168, 85, 247, 0.28), transparent 35%),
+            linear-gradient(135deg, #020617 0%, #0f172a 35%, #111827 70%, #1e293b 100%);
+
+        background-attachment: fixed;
     }
+
 
     header {
         position: fixed;
         width: 100%;
         top: 0;
-        background: #658d49;
+        background: rgba(15, 23, 42, 0.85);
         padding: 11px 3%;
 
     }
@@ -38,7 +43,7 @@
 
 
     nav img {
-
+        color: #60A5FA;
         width: 90px;
         height: 90px;
     }
@@ -72,14 +77,16 @@
     }
 
     .hero h1 {
+        color: white;
         font-size: 50px;
     }
 
     .hero span {
-        color: #38bdf8;
+        color: #c3bc38;
     }
 
     .hero p {
+        color: white;
         margin: 20px 0;
         font-size: 18px;
     }
@@ -87,7 +94,7 @@
     .btn {
         display: inline-block;
         padding: 12px 25px;
-        background: #38bdf8;
+        background: #f30530;
         color: white;
         text-decoration: none;
         border-radius: 8px;
@@ -95,7 +102,7 @@
     }
 
     .btn:hover {
-        background: #0284c7;
+        background: #0fa3ed;
     }
 
     section {
@@ -105,13 +112,14 @@
     h2 {
         text-align: center;
         margin-bottom: 30px;
-        color: #38bdf8;
+        color: #fdffff;
     }
 
     .about p {
         max-width: 700px;
         margin: auto;
         text-align: center;
+        color: white;
     }
 
     .project-grid {
@@ -121,7 +129,7 @@
     }
 
     .card {
-        background: #1e293b;
+        background: #f2f4f6;
         padding: 25px;
         border-radius: 12px;
         transition: 0.3s;
@@ -132,7 +140,7 @@
     }
 
     .card h3 {
-        color: #38bdf8;
+        color: #000000;
         margin-bottom: 10px;
     }
 
@@ -144,29 +152,33 @@
     }
 
     .skill-list span {
-        background: #1e293b;
+        background: #fcfdff;
         padding: 10px 20px;
         border-radius: 30px;
+        color: rgb(13, 13, 13);
     }
 
     .contact {
         text-align: center;
+        color: white;
     }
 
     footer {
-        background: #111827;
+        background: #06080d;
         text-align: center;
         padding: 20px;
         margin-top: 20px;
+        color: white;
     }
 
     video,
     iframe {
         width: 100% !important;
         max-width: 100%;
-        height: 1500px !important;
+        height: 1100px !important;
         background-position: center;
         background-repeat: no-repeat;
+        margin: 0%;
     }
 
     @media(max-width:768px) {
@@ -195,7 +207,7 @@
 
     <header>
         <nav>
-            <img src="image/558b1e2d-679e-4b48-ad81-0773efe10ce7.png" alt="Profile">
+            <img src="image/558b1e2d-679e-4b48-ad81-0773efe10ce7-Photoroom.png" alt="Profile">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
