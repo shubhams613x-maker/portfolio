@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/icons">
+    <title>Document</title>
+</head>
+<style>
+    @media screen and (min-width:768px) {
+        * {
+
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*FIRST-SECTION*/
+
+        .Navi {
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            background-repeat: no-repeat;
+        }
+
+        .Navi {
+            margin-top: 60px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            padding: 13px 90px;
+        }
+
+        .navbar img {
+            width: 100px;
+            height: 50px;
+            margin-right: 300px;
+        }
+
+        ul {
+
+            display: flex;
+        }
+
+        li {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .noi li {
+            margin-left: 80px;
+        }
+
+        .heading-section {
+            margin-top: 130px;
+        }
+
+        .heading-section h1 {
+            font-size: 80px;
+            width: 600px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            animation: rotateRound 1.7s linear forwards;
+        }
+
+        @keyframes rotateRound {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .heading-section p {
+            font-size: 29px;
+            width: 600px;
+            padding: 16px;
+            list-style: inside;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading-section button {
+            padding: 23px 60px;
+            font-size: 23px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+
+        .add {
+            display: flex;
+            justify-content: center;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .ohi-section img {
+            width: 100%;
+            height: 821px;
+            animation: bottomToTop 1.7s ease-out forwards;
+        }
+
+        @keyframes bottomToTop {
+            from {
+                transform: translateY(200px);
+                /* Start 100px below */
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                /* Original position */
+                opacity: 1;
+            }
+        }
+
+        .rocc h5 {
+            font-size: 29px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            border-bottom: 0.8px solid black;
+        }
+
+        .com {
+            animation: rightToLeft 2s ease forwards;
+        }
+
+        @keyframes rightToLeft {
+            from {
+                transform: translateX(300px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+
+        /*SECOND-SECTION*/
+
+        .second-section {
+            background-color: #010409;
+        }
+
+        .this {
+            display: flex;
+            background-color: #010409;
+            color: #fff;
+            margin-top: 8px;
+            margin: 8px;
+            justify-content: center;
+            text-align: center;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .shubh img {
+            width: 250px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 50px;
+            border: 15px solid yellow;
+        }
+
+        .shubh {
+            background-color: white;
+            width: 350px;
+            height: 600px;
+            justify-content: space-between 13px;
+            border-radius: 3%;
+            text-align: center;
+            justify-content: space-around;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        .shubh h1,
+        p {
+            color: black;
+        }
+
+        .shubh h1 {
+            padding: 20px;
+        }
+
+        .shubh p {
+            padding: 20px;
+        }
+
+        .head {
+            justify-content: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+        .head h1 {
+            align-items: center;
+            text-align: center;
+            padding: 16px;
+            font-size: 60px;
+        }
+
+        .head p {
+            font-size: 20px;
+            justify-content: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+        .lop p {
+            color: #fff;
+            text-align: center;
+            text-align: center;
+            justify-content: center;
+            justify-content: space-around;
+            font-size: 23px;
+            font-style: italic;
+            padding: 30px;
+        }
+
+        .lop a {
+            color: #fff;
+            font-size: 26px;
+            font-style: italic;
+            border-bottom: 1px solid white;
+        }
+
+        /*THIRD-SECTION*/
+
+        .Third-Section {
+            background-color: yellow;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .Third-Section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .image-section1 img {
+            width: 100%;
+            height: 820px;
+        }
+
+        .Third-Section h1 {
+            font-size: 80px;
+        }
+
+        .Third-Section p {
+
+            padding: 13px;
+            font-size: 23px;
+        }
+
+        .grid-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 50px;
+        }
+
+        .lol p {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /*FOURTH-SECTION*/
+
+        .fourth-section {
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .head2 h1 {
+            font-size: 80px;
+            text-align: center;
+            color: #000;
+        }
+
+        .head2 p {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .shubham {
+            display: grid;
+            grid-template-columns: repeat(3, 3fr);
+            padding: 0px 310px;
+            margin-top: 60px;
+        }
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6,
+        .item7,
+        .item8,
+        .item9 {
+            margin: 0%;
+            padding: 0%;
+            width: 400px;
+        }
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6,
+        .item7,
+        .item8,
+        .item9,
+        h2 {
+            font-size: 40px;
+
+        }
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6,
+        .item7,
+        .item8,
+        .item9,
+        p {
+            font-size: 21px;
+        }
+
+        .item1 {
+
+            border-top: 10px solid yellow;
+            border-top: 10px solid yellow;
+        }
+
+        .item2 {
+            border-top: 10px solid yellow;
+        }
+
+        .item3 {
+            border-top: 10px solid yellow;
+        }
+
+        .item4 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item5 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item6 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item7 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item8 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item9 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .yellow-dot {
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 13px;
+            margin-top: 10px;
+        }
+
+        .shubham button {
+            padding: 23px 60px;
+            font-size: 23px;
+            border: 2px solid black;
+            margin-top: 0px;
+            margin-left: 480px;
+        }
+
+
+        /*FIFTH-SECTION*/
+
+        .fifth-section {
+            background-image: url(/images/t4.png);
+            width: 100%;
+            height: 898px;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+        }
+
+        .this1 {
+            display: flex;
+            color: #fff;
+            margin-top: 8px;
+            margin: 8px;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            margin-top: 26px;
+        }
+
+        .shubh1 img {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        .shubh1 {
+            background-color: rgb(241, 241, 241);
+            width: 400px;
+            height: 450px;
+            border-radius: 3%;
+            justify-content: space-around;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        .shubh1 h1 {
+            color: black;
+        }
+
+        .shubh1 h1 {
+            padding: 17px;
+        }
+
+        .shubh1 p {
+            padding: 20px;
+        }
+
+        .head1 {
+            justify-content: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+        .head1 h1 {
+            align-items: center;
+            text-align: center;
+            padding: 26px;
+            font-size: 60px;
+            padding: 80px;
+            color: #000;
+        }
+
+        /*SIXTH-SECTION*/
+
+        .sixth-section {
+            background-color: yellow;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flexoo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 60px;
+            justify-content: space-around;
+        }
+
+        .image-sectionha img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .heading-sec h1 {
+            font-size: 50px;
+        }
+
+        .heading-sec p {
+            padding: 13px;
+            font-size: 23px;
+        }
+
+        .shubham-next button {
+            padding: 20px 40px;
+            background-color: yellow;
+        }
+
+        .shubham-next button:hover {
+            background-color: black;
+        }
+
+        /*SEVENTH-SECTION*/
+
+        .seventh-section {
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(255, 252, 252, 0.6), rgba(254, 238, 238, 0.311)), url("images/bg new.jpg");
+        }
+
+        .footage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 60px;
+            justify-content: space-around;
+        }
+
+        .image-sectionha img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .shubham-next button {
+            margin-top: 15px;
+            padding: 20px 40px;
+            background-color: yellow;
+        }
+
+        .shubham-next button:hover {
+            background-color: black;
+        }
+
+        .borderpop {
+            margin-left: 460px;
+            width: 850px;
+            border: 0.1px solid rgb(144, 138, 138);
+        }
+
+        .parae {
+            text-align: center;
+        }
+
+        .parae p {
+            padding: 15px;
+        }
+
+        .hadl {
+            font-size: 50px;
+            text-align: center;
+        }
+
+
+
+
+
+        /*EIGHTH-SECTION*/
+
+        .eighth-section {
+            width: 100%;
+            height: 600px;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            background-repeat: no-repeat;
+            background: linear-gradient(rgb(50, 50, 96), rgb(112, 100, 100), rgb(119, 119, 119));
+        }
+
+        .this1 {
+            display: flex;
+            color: #fff;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            padding: 50px;
+
+
+        }
+
+        .ohichann {
+            text-align: center;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .ohichann h1 {
+
+            font-size: 60px;
+            color: white;
+
+        }
+
+        .ohichann p {
+
+            font-size: 30px;
+            color: white;
+            padding: 9px;
+
+        }
+
+        .shubh2 img {
+            margin-left: 280px;
+            width: 50px;
+            height: 45px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        .shubh2 h1 {
+            color: black;
+        }
+
+        .shubh2 h1 {
+            padding: 17px;
+        }
+
+        .shubh2 p {
+            padding: 20px;
+        }
+
+        .head2 {
+            justify-content: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+        .head3 h1 {
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            font-size: 60px;
+            color: white;
+            padding: 30px;
+        }
+
+        .head3 p {
+            align-items: center;
+            text-align: center;
+            font-size: 23px;
+            color: white;
+        }
+
+        .bordert {
+            width: 444px;
+            border: 10px solid yellow;
+        }
+
+        .image-sectionha2 img {
+            width: 1200px;
+            height: 800px;
+        }
+
+
+
+        .shubham-next button {
+            padding: 20px 40px;
+            background-color: yellow;
+        }
+
+        .shubham-next button:hover {
+            background-color: black;
+        }
+
+
+        /*NINTH-SECTION*/
+
+        .ninth-section {
+            width: 100%;
+            height: 898px;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .flexoo3 {
+            display: flex;
+            display: flex;
+            color: #fff;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .jkse {
+            padding: 20px 20px;
+            align-items: center;
+        }
+
+        .jkse h1 {
+            font-size: 70px;
+            color: black;
+
+        }
+
+        .jkse p {
+            padding: 18px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .shubh2 img {
+            margin-left: 280px;
+            width: 50px;
+            height: 45px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        .shubh2 {
+            background-color: rgb(241, 241, 241);
+            justify-content: space-around;
+            justify-content: center;
+        }
+
+        .shubh2 h1 {
+            color: black;
+        }
+
+        .shubh2 h1 {
+            padding: 17px;
+        }
+
+        .shubh2 p {
+            padding: 20px;
+        }
+
+        .head2 {
+            justify-content: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+        .head3 h1 {
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            font-size: 60px;
+            color: white;
+            padding: 30px;
+        }
+
+        .head3 p {
+            align-items: center;
+            text-align: center;
+            font-size: 23px;
+            color: white;
+        }
+
+        .bordert {
+            width: 444px;
+            border: 10px solid yellow;
+        }
+
+        .image-sectionha2 img {
+            width: 1380px;
+            height: 898px;
+        }
+
+        .shubham-next button {
+            padding: 20px 40px;
+            background-color: yellow;
+        }
+
+        .shubham-next button:hover {
+            background-color: black;
+        }
+
+
+
+        /*TENTH-SECTION*/
+        .tenth-section {
+            width: 100%;
+            height: 500px;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(49, 42, 42);
+        }
+
+        .flexoo4 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+            gap: 80px;
+            padding: 90px 50px;
+        }
+
+        .image-sectionha3 h1 {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 30px;
+        }
+
+        .image-sectionha3 p {
+            font-size: 20px;
+            color: white;
+            padding: 0px;
+        }
+
+        .jkse2 h1 {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 30px;
+        }
+
+        .jkse2 p {
+            padding: 5px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .jkse2 input {
+            margin-top: 23px;
+            padding: 28px 70px;
+        }
+
+        .shubham-next1 button {
+            margin-top: 27px;
+            padding: 20px 40px;
+            background-color: yellow;
+        }
+
+        .shubham-next button:hover {
+            background-color: black;
+        }
+
+        /*FOOTER*/
+
+        .eleventh-section {
+            background-color: rgb(120, 64, 64);
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            justify-content: space-around;
+            text-align: center;
+            color: white;
+            align-items: center;
+            padding: 100px;
+        }
+
+        .eleventh-section h1 {
+            font-size: 15px;
+        }
+
+        .eleventh-section p {
+            font-size: 18px;
+            color: white;
+        }
+
+        .lastName a {
+            color: white;
+            border-color: yellow;
+        }
+    }
+
+
+
+    /* =====================================
+   MOBILE RESPONSIVE
+   320px - 767px
+===================================== */
+
+    @media only screen and (min-width:320px) and (max-width:767px) {
+
+        /*====================================
+RESET
+=====================================*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /*====================================
+NAVBAR
+=====================================*/
+
+        .Navi {
+            background-image: url("images/5.jpg");
+            padding: 20px;
+            text-align: center;
+            height: auto;
+        }
+
+        .navbar {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+        }
+
+        .navbar img {
+
+            width: 100%;
+
+
+        }
+
+        ul {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+
+        li {
+
+
+            font-size: 18px;
+            text-align: center;
+            list-style: none;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        li a {
+
+            display: block;
+            padding: 10px;
+            list-style: none;
+            color: black;
+            text-decoration: none;
+
+
+        }
+
+
+        /*====================================
+FIRST SECTION
+=====================================*/
+
+        .add {
+
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 30px;
+            padding: 20px;
+
+        }
+
+        .heading-section {
+
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .heading-section h1 {
+
+            font-size: 35px;
+            line-height: 45px;
+
+        }
+
+        .heading-section p {
+
+            font-size: 17px;
+            line-height: 28px;
+
+
+        }
+
+        .heading-section button {
+
+            width: 100%;
+            padding: 15px;
+
+        }
+
+        .ohi-section img {
+            width: 100%;
+            height: auto;
+            animation: bottomToTop 1.7s ease-out forwards;
+        }
+
+        @keyframes bottomToTop {
+            from {
+                transform: translateY(200px);
+                /* Start 100px below */
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                /* Original position */
+                opacity: 1;
+            }
+        }
+
+
+
+        /*====================================
+SECOND SECTION
+=====================================*/
+
+        .this {
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+
+        }
+
+        .shubh {
+
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .shubh img {
+
+            width: 100%;
+
+        }
+
+        .head {
+
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .head h1 {
+
+            font-size: 34px;
+            line-height: 45px;
+
+        }
+
+        .lop p {
+
+            text-align: center;
+        }
+
+        .lop a {
+
+
+            color: #060606;
+            font-weight: bold;
+
+        }
+
+        /*====================================
+THIRD SECTION
+=====================================*/
+
+        .Third-Section {
+            margin-top: 10px;
+            padding: 20px;
+            background-color: yellow;
+
+        }
+
+        .Third-Section h1 {
+
+            font-size: 34px;
+            text-align: center;
+            line-height: 45px;
+
+        }
+
+        .Third-Section p {
+
+            text-align: center;
+            font-size: 17px;
+            line-height: 28px;
+
+        }
+
+        .Third-Section1 {
+
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+        }
+
+        .image-section1 {
+
+            width: 100%;
+
+        }
+
+        .image-section1 img {
+
+            width: 100%;
+
+        }
+
+        .grid-container {
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+
+        }
+
+        /*====================================
+FOURTH SECTION
+=====================================*/
+
+
+
+        .fourth-section {
+
+
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        .head2 {
+
+            text-align: center;
+
+        }
+
+        .head2 h1 {
+
+            font-size: 34px;
+
+        }
+
+        .item1 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+            border-top: 10px solid yellow;
+        }
+
+        .item2 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item3 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item4 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item5 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item6 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item7 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item8 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .item9 {
+            margin-top: 18px;
+            border-top: 10px solid yellow;
+        }
+
+        .yellow-dot {
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 13px;
+            margin-top: 10px;
+        }
+
+        .shubham button {
+            padding: 23px 60px;
+            font-size: 23px;
+            border: 2px solid black;
+            margin-top: 8px;
+
+        }
+
+        .shubham button {
+            padding: 20px 40px;
+            background-color: yellow;
+        }
+
+        .shubham button:hover {
+            background-color: black;
+        }
+
+        .shubham {
+
+
+            padding: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /*====================================
+FIFTH SECTION
+=====================================*/
+
+        .fifth-section {
+            background-image: url(/images/t4.png);
+            padding: 20px;
+            height: auto;
+            text-align: center;
+
+        }
+
+        .this1 {
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+
+        }
+
+        .shubh1 {
+
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .shubh1 img {
+
+            background-color: yellow;
+            margin-left: 76px;
+        }
+
+        .head1 {
+
+            text-align: center;
+
+        }
+
+        .head1 h1 {
+
+            font-size: 34px;
+            line-height: 45px;
+
+        }
+
+
+
+
+        .shubham-next button {
+            padding: 20px 40px;
+            background-color: yellow;
+        }
+
+        .shubham-next button:hover {
+            background-color: black;
+        }
+
+
+        /*====================================
+SIXTH SECTION
+=====================================*/
+
+        .flexoo {
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+
+        }
+
+        .heading-sec {
+
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .heading-sec h1 {
+
+            width: 100%;
+            font-size: 34px;
+
+        }
+
+        .heading-sec p {
+
+            width: 100%;
+            font-size: 17px;
+
+        }
+
+        .image-sectionha {
+
+            width: 100%;
+
+        }
+
+        .image-sectionha img {
+
+            width: 100%;
+
+        }
+
+        /*====================================
+SEVENTH SECTION
+=====================================*/
+
+        .footage {
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+
+        }
+
+        .borderpop {
+
+            width: 100%;
+
+        }
+
+        .hadl {
+
+            text-align: center;
+            font-size: 34px;
+
+        }
+
+        /*====================================
+EIGHTH SECTION
+=====================================*/
+
+        .eighth-section {
+
+            padding: 20px;
+            height: auto;
+
+        }
+
+        .ohichann {
+
+            text-align: center;
+
+        }
+
+        .ohichann h1 {
+
+            font-size: 34px;
+
+        }
+
+        .ohichann p {
+
+            font-size: 17px;
+
+        }
+
+        .shubh2 {
+
+            width: 100%;
+
+        }
+
+        .shubh2 img {
+
+            width: 100%;
+
+        }
+
+        /*====================================
+NINTH SECTION
+=====================================*/
+
+        .ninth-section {
+
+            padding: 20px;
+            height: auto;
+
+        }
+
+        .flexoo3 {
+
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+        }
+
+        .jkse {
+
+            text-align: center;
+
+        }
+
+        .jkse h1 {
+
+            font-size: 34px;
+
+        }
+
+        .jkse p {
+
+            font-size: 17px;
+
+        }
+
+        /*====================================
+TENTH SECTION
+=====================================*/
+
+        .tenth-section {
+
+            padding: 20px;
+
+        }
+
+        .flexoo4 {
+
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+        }
+
+        .jkse2 {
+
+            width: 100%;
+
+        }
+
+        .jkse2 input {
+
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+
+        }
+
+        .shubham-next1 button {
+
+            width: 100%;
+            padding: 15px;
+
+        }
+
+        /*====================================
+FOOTER
+=====================================*/
+
+        .eleventh-section {
+
+            padding: 40px 20px;
+            text-align: center;
+            height: auto;
+
+        }
+
+        .eleventh-section h1 {
+
+            font-size: 18px;
+
+        }
+
+        .eleventh-section p {
+
+            font-size: 15px;
+            line-height: 25px;
+
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="Navi">
+        <nav class="navbar">
+            <img src="images\default-logo.png" alt="">
+            <div class="noi">
+                <ul>
+                    <li> <a href="https://nicepage.com/css-templates/preview/local-home-repair-3854218">Home</a></li>
+                    <li><a href="https://nicepage.com/css-templates/preview/local-home-repair-3854218">Team</a></li>
+                    <li><a href="https://nicepage.com/css-templates/preview/local-home-repair-3854218">AboutUs</a></li>
+                    <li><a href="https://nicepage.com/css-templates/preview/local-home-repair-3854218">Landing</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="add">
+            <div class="ohi-section">
+                <img src="images/min (1).png" alt="jhkijlj;ki">
+            </div>
+            <div class="heading-section">
+                <h1>Home Repair Services</h1>
+                <div class="com">
+                    <p>Find amazing home repair services tailored for you.
+                        Handy connects you with amazing home repair professionals.</p>
+                    <button>CONTACT US</button>
+                    <div class="rocc">
+                        <p>Image from <a class="von" href="https://billionphotos.com/">Billionphotos</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECOND-SECTON -->
+    <div class="second-section">
+        <div class="head">
+            <h1>Why Choose Our Company <br>For Your Home Repairs?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="youth">
+            <div class="this">
+                <div class="shubh">
+                    <img class="oho-section" src="images/1111.jpg" alt="">
+                    <h1>High-Quality</h1>
+                    <p>We use high-quality materials, professional tools and supplies, and attention to detail not
+                        found in most home improvement companies. From small jobs to large ones,
+                        you can rely on the experience.</p>
+                </div>
+                <div class="shubh">
+                    <img class="oho-section" src="images/44.jpg" alt="">
+                    <h1>Professionalism</h1>
+                    <p>We use high-quality materials, professional tools and supplies, and attention to detail not
+                        found in most home improvement companies. From small jobs to large ones,
+                        you can rely on the experience.</p>
+                </div>
+                <div class="shubh">
+                    <img class="oho-section" src="images/r5.jpg" alt="">
+                    <h1>High-Quality</h1>
+                    <p>Our repair experts are professionals with an average of 10 years of trade experience.
+                        While you'll find that each of our repair pros behave and communicate professionally.</p>
+                </div>
+                <div class="shubh">
+                    <img class="oho-section" src="images/f.jpg" alt="">
+                    <h1>Courteous</h1>
+                    <p>We see this as an opportunity to save our customers time, energy, and frustration. Our
+                        customers also appreciate the timely communication we provide regarding their questions and
+                        concerns.</p>
+                </div>
+            </div>
+        </div>
+        <div class="lop">
+            <p>Image from <a href="https://www.magnific.com/"> freepik</a></p>
+        </div>
+    </div>
+
+    <!-- THIRD-SECTION-->
+    <div class="Third-Section">
+        <div class="Third-Section1">
+            <div class="image-section1">
+                <img src="images/eeee-min-removebg-preview.png" alt="">
+            </div>
+            <div class="heading3">
+                <h1>Reliable, Trusted,<br> and Professional <br> Services</h1>
+                <p>Duis aute irure dolor in reprehenderit in <br> voluptate velit esse
+                    cillum dolore eu fugiat <br> nulla pariatur.</p>
+                <div class="grid-container">
+                    <div class="coulmn1">
+                        <p> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#1f1f1f">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>Office</p>
+
+                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#1f1f1f">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>Kitchen</p>
+                    </div>
+                    <div class="coulmn2">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#1f1f1f">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>Living Room</p>
+                        <p> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#1f1f1f">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg> Basement</p>
+                    </div>
+                </div>
+                <div class="lol">
+                    <p>Image from <a href="https://www.magnific.com/"> freepik</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOURTH-SECTION -->
+    <div class="fourth-section">
+        <div class="head2">
+            <h1>Home Repair Services</h1>
+        </div>
+        <div class="shubham">
+            <div class="item1">
+                <div class="yellow-dot"></div>
+                <h2>Kitchen Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+            <div class="item2">
+                <div class="yellow-dot"></div>
+
+                <h2>Grout Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+            <div class="item3">
+                <div class="yellow-dot"></div>
+                <h2>Countertop Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+            <div class="item4">
+                <div class="yellow-dot"></div>
+                <h2>Shower Head Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+            <div class="item5">
+                <div class="yellow-dot"></div>
+                <h2>Bathroom Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+            <div class="item6">
+                <div class="yellow-dot"></div>
+                <h2>Toilet Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+            <div class="item7">
+                <div class="yellow-dot"></div>
+                <h2>Sink Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+            <div class="item8">
+                <div class="yellow-dot"></div>
+                <h2>Ceiling Fan Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+            <div class="item9">
+                <div class="yellow-dot"></div>
+                <h2>Light Fixture Repair</h2>
+                <p> ipsum dolor sit amet, consectetur <br> adipiscing elit,
+                    sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua.
+                    Sed vulputate mi sit amet mauris <br> commodo quis imperdiet.
+                    Leo duis ut <br> diam quam nulla porttitor.</p>
+            </div>
+        </div>
+        <div class="shubham">
+            <button>LEARNMORE</button>
+        </div>
+    </div>
+
+    <!-- FIFTH-SECTION -->
+    <div class="fifth-section">
+        <div class="head1">
+            <h1>Our Services</h1>
+        </div>
+        <div class="shubhu">
+            <div class="this1">
+                <div class="shubh1">
+                    <img class="oho-section" src="images/download (2).png" alt="">
+                    <h1>Carpentry</h1>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p><a href="https://www.magnific.com/">More</a></p>
+                </div>
+                <div class="shubh1">
+                    <img class="oho-section" src="images/download (3).png" alt="">
+                    <h1>Flooring</h1>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p><a href="https://www.magnific.com/">More</a></p>
+                </div>
+                <div class="shubh1">
+                    <img class="oho-section" src="images/download (4).png" alt="">
+                    <h1>Painting</h1>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p><a href="https://www.magnific.com/">More</a></p>
+                </div>
+                <div class="shubh1">
+                    <img class="oho-section" src="images/download (5).png" alt="">
+                    <h1>Electrical Work</h1>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p><a href="https://www.magnific.com/">More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SIXTH-SECTION-->
+
+    <div class="sixth-section">
+        <div class="flexoo">
+            <div class="heading-sec">
+                <h1>Home Repair Services For <br> the Inside</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                    sed do eiusmod tempor incididunt ut labore et dolore <br>
+                    magna aliqua. Sed vulputate mi sit amet mauris <br>
+                    commodo quis imperdiet. Leo duis ut diam quam nulla <br>
+                    porttitor.</p>
+                <div class="lol">
+                    <p>Image from <a href="https://www.magnific.com/"> freepik</a></p>
+                </div>
+                <div class="shubham-next">
+                    <button>LEARNMORE</button>
+                </div>
+            </div>
+            <div class="image-sectionha">
+                <img src="images/77-min.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- SEVENTH-SECTION -->
+
+    <div class="seventh-section">
+        <div class="hadl">
+            <h1>Send us a message</h1>
+        </div>
+        <div class="footage">
+            <div class="image-sectionha1">
+                <img src="images/rf.jpg" alt="">
+                <h1>Send us a message</h1>
+                <p>Email us using our simple form and we'll respond within 10 <br> working days.</p>
+                <div class="shubham-next">
+                    <button>SENDUSAMESSAGE</button>
+                </div>
+            </div>
+            <div class="image-sectionha1">
+                <img src="images/rtr.jpg" alt="">
+                <h1>Make a complaint</h1>
+                <p>If you're not happy with the service you've received from Ourb <br> Company, call us or send us an
+                    email and let us know.</p>
+                <div class="shubham-next">
+                    <button>MAKEACOMPLAINT</button>
+                </div>
+            </div>
+        </div>
+        <div class="borderpop">
+        </div>
+        <div class="parae">
+            <p>*Calls may be recorded for quality control and training purposes. Calls to 03 numbers will cost you no
+                more than 01 or <br> 02 numbers, charges may vary depending on your network provider.
+                Calls to 03 numbers will be part of inclusive minute <br> plans for landlines and mobiles.</p>
+            <p>Image from <a href="https://www.magnific.com/"> freepik</a></p>
+        </div>
+    </div>
+
+    <!-- EIGHTH-SECTION-->
+    <div class="eighth-section">
+
+
+
+        <div class="ohichann">
+            <h1>Professional Services</h1>
+            <p>We'll Leave Your Home Safer Than We Found It</p>
+        </div>
+        <div class="shubhu">
+            <div class="this1">
+                <div class="shubh2">
+                    <div class="bordert"></div>
+                    <h1>Electrical Services</h1>
+                    <p>Feugiat nibh sed pulvinar proin gravida <br> hendrerit lectus. Purus in mollis nunc <br> sed
+                        id semper risus. Gravida in <br>
+                        fermentum et sollicitudin ac orci <br>
+
+                        phasellus egestas tellus. Sed libero enim <br> sed faucibus turpis in eu mi.
+                        Ornare arcu <br> dui vivamus arcu.</p>
+                    <img class="oho-section" src="images/download (6).png" alt="">
+
+                </div>
+                <div class="shubh2">
+                    <div class="bordert"></div>
+                    <h1>Repair Services</h1>
+                    <p>Feugiat nibh sed pulvinar proin gravida <br> hendrerit lectus. Purus in mollis nunc <br> sed
+                        id semper risus. Gravida in <br>
+                        fermentum et sollicitudin ac orci <br>
+
+                        phasellus egestas tellus. Sed libero enim <br> sed faucibus turpis in eu mi.
+                        Ornare arcu <br> dui vivamus arcu.</p>
+                    <img class="oho-section" src="images/download (7).png" alt="">
+                </div>
+                <div class="shubh2">
+                    <div class="bordert"></div>
+                    <h1>Tips & Ideas</h1>
+                    <p>Feugiat nibh sed pulvinar proin gravida <br> hendrerit lectus. Purus in mollis nunc <br> sed
+                        id semper risus. Gravida in <br>
+                        fermentum et sollicitudin ac orci <br>
+
+                        phasellus egestas tellus. Sed libero enim <br> sed faucibus turpis in eu mi.
+                        Ornare arcu <br> dui vivamus arcu.</p>
+                    <img class="oho-section" src="images/download (8).png" alt="">
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- NINTH-SECTION -->
+
+    <div class="ninth-section">
+        <div class="flexoo3">
+            <div class="jkse">
+                <h1>Meet Your Home Service Experts</h1>
+                <p>Image from <a href="https://www.magnific.com/"> freepik</a></p>
+                <div class="shubhkl">
+                    <p> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                        </svg>Emergency Repairs</p>
+                </div>
+                <div class="shubhkl">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                        </svg>Electrical Repair</p>
+                </div>
+                <div class="shubhkl">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                        </svg>
+                        Circuit Breakers</p>
+                </div>
+                <div class="shubhkl">
+                    <p> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                        </svg>Ceiling Fans</p>
+                </div>
+                <div class="shubhkl">
+                    <p> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                        </svg>Generators</p>
+                </div>
+                <div class="shubham-next">
+                    <button>LEARNMORE</button>
+                </div>
+            </div>
+            <div class="image-sectionha2">
+                <img src="images/-min.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- TENTH-SECTION -->
+
+    <div class="tenth-section">
+        <div class="flexoo4">
+            <div class="jkse2">
+                <h1>Email Us</h1>
+                <p>Email us using our simple form and <br> we'll respond within 10 working days.</p>
+                <input type="text" id="username" name="username" placeholder="Enter a valid email address" required>
+                <div class="shubham-next1">
+                    <button> <a href="https://mail.google.com/"> SUBMIT</a></button>
+                </div>
+            </div>
+            <div class="image-sectionha3">
+                <img src="images/733585.png" alt="">
+                <h1>Whatsapp Support</h1>
+                <p>Add us on WhatsApp & send queries <br> for instant reply.</p>
+                <div class="shubham-next">
+                    <button>+12-345-678-89089</button>
+                </div>
+            </div>
+
+
+            <div class="image-sectionha3">
+                <img src="images/download (9).png" alt="">
+                <h1>Live Chat</h1>
+                <p>Add us on WhatsApp & send queries <br> for instant reply.</p>
+                <div class="shubham-next">
+                    <button>LIVE CHART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ELEVENTH-SECTION -->
+
+    <div class="eleventh-section">
+        <h2>Sample text. Click to select the Text Element.</h2>
+        <br>
+        <div class="lastName">
+            <p>This site was created with the <a href="https://www.magnific.com/"> Nicepage</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
