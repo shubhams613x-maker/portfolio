@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>BOOTSTRAP</title>
+</head>
+
+
+<style>
+    .navbar-toggler {
+
+
+        border: none;
+    }
+
+    .second-section {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/electric-farm-with-panels-producing-clean-ecologic-energy5-min.jpg");
+        width: 100%;
+        height: 800px;
+        text-align: center;
+
+    }
+
+    .fog h1 {
+        color: white;
+        text-align: center;
+        font-size: 80px;
+
+    }
+
+    .fog p {
+        text-align: center;
+        color: white;
+    }
+
+    .fog {
+        opacity: 0;
+        transform: scale(0.5);
+        animation: zoomIn 1s ease-out forwards;
+    }
+
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+
+
+    .card-section {
+        animation: slideUp 0.8s ease-out;
+
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(190px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .card-body h1 {
+
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+
+    }
+
+    .btn {
+        animation: slideUp 0.8s ease-out;
+
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(190px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .free p {
+
+
+        font-style: italic;
+    }
+
+    .free {
+
+
+
+        animation: slideRightToLeft 1s ease-out forwards;
+    }
+
+    @keyframes slideRightToLeft {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    .free1 {
+
+
+
+        animation: slideRightToLeft 1s ease-out forwards;
+    }
+
+    @keyframes slideRightToLeft {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    .third-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .third-section {
+        animation: slideUp 0.8s ease-out;
+
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(190px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+    }
+
+
+
+    .card {
+        margin: 20px;
+    }
+
+    .fox {
+
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("images/26193-min.jpg");
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        margin-top: 300px;
+
+    }
+
+
+
+    .card1 {
+
+        background-size: cover;
+
+
+
+
+
+        /* Vertical center */
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/5s.jpg");
+        background-position: center;
+
+    }
+
+    .card2 {
+
+
+        background-size: cover;
+        background-position: center;
+
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/6.jpg");
+
+    }
+
+    .card3 {
+
+        background-size: cover;
+        background-position: center;
+
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/7s.jpg");
+
+    }
+
+    .card4 {
+
+
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/8s.jpg");
+        background-position: center;
+    }
+
+    .card5 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/9.jpg");
+        background-position: center;
+
+
+    }
+
+    .card6 {
+
+        background-size: cover;
+        background-position: center;
+
+
+
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/8s.jpg");
+        background-position: center;
+    }
+
+    .card1-body {
+        padding-top: 400px;
+        align-items: center;
+        padding-left: 10px;
+
+    }
+
+    .card2-body {
+        padding-top: 400px;
+        align-items: center;
+        padding-left: 10px;
+
+    }
+
+    .card3-body {
+        padding-top: 400px;
+        align-items: center;
+        padding-left: 10px;
+
+    }
+
+    .card4-body {
+        padding-top: 400px;
+        align-items: center;
+        padding-left: 10px;
+
+    }
+
+    .card5-body {
+        padding-top: 400px;
+        align-items: center;
+        padding-left: 10px;
+
+    }
+
+    .card6-body {
+        padding-top: 400px;
+        align-items: center;
+        padding-left: 10px;
+
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        border: none;
+        border-bottom: 2px solid #000;
+        border-radius: 0;
+        box-shadow: none !important;
+        padding-left: 0;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border: 2px solid #f7f4f4;
+    }
+
+    .bodp button {
+        background: #b89d1b;
+        color: #fff;
+        border-radius: 40px;
+        font-weight: bold;
+        padding: 12px;
+    }
+
+    .bodp button:hover {
+        background: #9d8616;
+        color: #fff;
+    }
+
+    .vox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+</style>
+
+<body>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar justify-content-center w-100  px-0">
+        <div class="container-fluid justify-content-around gap-5 p-3 bg-white border-none ">
+            <img src="images\default-logo3.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start  offcanvas-left bg-black text-white bg-dark" tabindex="-1"
+                id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header ">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active  text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle  text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start  text-white">
+                                <li><a class="dropdown-item dropdown-item-left" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form action="https://www.google.com/search" method="GET" target="_blank" class="d-flex mt-3   text-white" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success  text-white" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--SECOND-SECTION-->
+    <div class="second-section justify-content-center flex-wraps w-100 px-0">
+
+
+        <div class="fog">
+
+            <h1 class="text-white fs-1"> We're Leaders <br>
+                in Industrial Business
+            </h1>
+            <p class="text-white fs-5">We specialize in a wide variety of solar installation and our experts are ready
+                to
+                <br>install your solar
+                system.
+            </p>
+
+        </div>
+
+
+
+
+
+
+        <button type="button" class="btn btn-outline-secondary text-white border-white btn-lg text-center  animate-up">Secondary</button>
+
+
+
+
+
+        <div class="card-section d-flex justify-content-evenly flex-wraps bg-white mx-auto
+         pt-5 custom-box animate-up w-75 h-75 pb-3 mt-3">
+
+            <div class="card text-center w-25 h-25 flex-wraps  ">
+                <img src="images\business-person-planning-alterna.jpg " class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-text">Experienced Team</h3>
+                </div>
+            </div>
+
+
+
+            <div class="card  w-25 h-25 flex-wraps">
+                <img src="images/656.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-text">Modern Equipment</h3>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card  w-25 h-25  flex-wraps">
+                <img src="images/5453.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-text ">Smart Methods</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="free flex-wraps pb-5">
+            <p class="text-black fw-bolder">Images from <a class="text-primary"
+                    href="https://www.magnific.com/">freepik</a></p>
+
+
+        </div>
+
+
+    </div>
+
+    <!--THIRD-SECTION-->
+    <div class="fox w-100">
+        <h1 class="text-center text-white fs-1 py-5">Solar Benefits</h1>
+        <div class="third-section">
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-plus text-yellow"></i>Get Future Ready</li>
+                    <li class="list-group-item"><i class="bi bi-plus"></i>Preserve Our Home</li>
+                    <li class="list-group-item"><i class="bi bi-plus"></i>Maximum Usage</li>
+                </ul>
+
+            </div>
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-plus text-yellow"></i>SolarForEveryBudget</li>
+                    <li class="list-group-item"><i class="bi bi-plus"></i>Say No To Blackouts</li>
+                    <li class="list-group-item"><i class="bi bi-plus"></i>Save More</li>
+                </ul>
+
+            </div>
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-plus text-yellow"></i>Control Your Energy</li>
+                    <li class="list-group-item"><i class="bi bi-plus"></i>Non-Maintenence</li>
+                    <li class="list-group-item"><i class="bi bi-plus"></i>Renewable Energy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="free1 text-center py-5  ">
+            <p class="text-white fw-bolder fst-italic ">Images from <a class="text-white fst-italic"
+                    href="https://www.magnific.com/">freepik</a></p>
+        </div>
+    </div>
+
+
+
+    <!--Fourth Section-->
+    <div class="container w-100 py-5 text-center">
+        <h1 class="fs-1">Our Projects</h1>
+        <p class="fs-3 p-3">
+            Sample text. Click to select the text box. Click again or double click
+            to start editing the text.
+        </p>
+
+        <div class="row g-2">
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/1.jpg" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/2.jpg" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/3.jpg" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/4.jpg" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/5.jpg" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/6.jpg" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/7.jpg" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/8.jpg" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="images/9.jpg" class="img-fluid rounded h-100" alt="">
+            </div>
+
+        </div>
+
+        <div class="free flex-wraps pt-5">
+            <p class="text-black fw-bolder">Images from <a class="text-primary"
+                    href="https://www.magnific.com/">freepik</a></p>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--fifth-section-->
+    <div class="box text-center w-100">
+
+
+        <h1 class="fs-1">Installing Benefits</h1>
+        <p class="fs-3">
+            Harnessing energy from the sun and converting it to clean energy to power your home — or even a <br>
+            car — reduces your carbon footprint and saves on energy costs for years to come.
+        </p>
+
+        <div class="row w-75 row-cols-md-3 g-2  align-items-center" style="margin-left:15%;">
+            <div class="col">
+                <div class="card1  w-75" style="height: 600px;">
+
+                    <div class="card1-body text-start ">
+                        <div class="border  w-50 text-primary "></div>
+                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Cost Savings</h1>
+                        <p class="card-text text-white">Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card2  w-75 " style="height: 600px;">
+
+                    <div class="card2-body text-start">
+                        <div class="border  w-50 "></div>
+                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Increase Home Value</h1>
+                        <p class="card-text text-white">Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card3  w-75 fw-bold " style="height: 600px;">
+
+
+                    <div class="card3-body text-start">
+                        <div class="border  w-50 fw-bold "></div>
+                        <h1 class="card-title fs-3  text-white pt-3">Solar Works Everywhere</h1>
+                        <p class="card-text text-white">Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card4  w-75 " style="height: 600px;">
+
+                    <div class="card4-body text-start">
+                        <div class="border  w-50 "></div>
+                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Earn Tax Credits & Rebates</h1>
+                        <p class="card-text text-white">Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card5  w-75" style="height: 600px;">
+
+                    <div class="card5-body  text-start">
+                        <div class="border  w-50 "></div>
+                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Help The ​​Environment</h1>
+                        <p class="card-text text-white">Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="card6  w-75" style="height: 600px;">
+
+                    <div class="card6-body text-start">
+                        <div class="border  w-50 "></div>
+                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Harnessing energy</h1>
+                        <p class="card-text text-white">Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="free flex-wraps pt-5">
+            <p class="text-black fw-bolder">Images from <a class="text-primary"
+                    href="https://www.magnific.com/">freepik</a></p>
+
+
+        </div>
+
+    </div>
+
+
+    <!--sixth-section-->
+    <div class="container-form w-100">
+
+        <div class="vox">
+
+            <div class="image-section">
+
+
+                <img src="images/sss.jpg" alt="">
+            </div>
+
+
+
+
+
+            <div class="col-lg-4 pl-5">
+
+                <h1 class="display-2">Contact Us</h1>
+
+                <form class="contact-form">
+
+                    <div class="mb-4">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your Name">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter a valid email address">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="6"></textarea>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="check">
+                        <label class="form-check-label" for="check">
+                            I accept the
+                            <a href="#" class="text-warning text-decoration-none">
+                                Terms of Service
+                            </a>
+                        </label>
+                    </div>
+                    <div class="bodp">
+                        <button class="btn submit-btn w-100">
+                            SUBMIT
+                        </button>
+                    </div>
+                    <div class="free1  py-5  ">
+                        <p class="text-dark fw-bolder fst-italic ">Images from <a class="text-dark fst-italic"
+                                href="https://www.magnific.com/">freepik</a></p>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+    <div class=" footer  bg-dark text-white p-5" style="height: 300px; margin-top: 130px;">
+        <h3 class="text-center pt-3">Sample text. Click to select the Text Element.</h3>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

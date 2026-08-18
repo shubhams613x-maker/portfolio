@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .slider {
+        width: 90%;
+        margin: auto;
+    }
+
+    .slide video,
+    .slide img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    /* Bottom Carousel */
+    .thumbnails {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        overflow-x: auto;
+    }
+
+    .thumbnails video,
+    .thumbnails img {
+        width: 120px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 2px solid #ddd;
+    }
+
+    .thumbnails video:hover,
+    .thumbnails img:hover {
+        border-color: #007bff;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .navigation label {
+        width: 100px;
+        height: 70px;
+        cursor: pointer;
+        border: 2px solid #ddd;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .navigation label img,
+    .navigation label video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="slider">
+
+        <!-- Main Slider -->
+        <div class="slides">
+            <div class="slide">
+                <video controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="slide">
+                <img src="images/26193-min.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="images/26193-min.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="thumbnails">
+            <video src="videos/video1.mp4" muted></video>
+            <img src="images/26193-min.jpg" alt="">
+            <img src="images/26193-min.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>
