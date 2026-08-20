@@ -1,0 +1,38 @@
+.text-center {
+
+    text-align: center;
+}
+
+.row {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 18px 6px;
+    gap:12px;
+}
+
+.button {
+
+    padding: 10px 13px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: rgb(255, 251, 251);
+}
+
+.input {
+    background: #11111b;
+    color: #ffffff;
+
+    border: 1px solid #3b2f6f;
+
+    box-shadow: inset 0 0 15px rgba(108, 60, 255, 0.15);
+
+    font-size:26px;
+    text-align: right;
+
+    border-radius: 18px;
+    padding: 15px;
+}
