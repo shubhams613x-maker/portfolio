@@ -12,10 +12,8 @@ function Add() {
 
         let newEle = document.createElement("ul");
 
-        newEle.innerHTML = `
-        ${input.value}
-        <i class="fa-solid fa-trash delete"></i>
-    `;
+        newEle.innerHTML = ` ${input.value}
+        <i class="fa-solid fa-trash delete"></i> `;
         text.appendChild(newEle);
         input.value = ("");
         newEle.querySelector("i").addEventListener("click", remove);

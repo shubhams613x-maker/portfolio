@@ -57,6 +57,70 @@
     }
 
 
+    .card-section {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Cards */
+    .custom-card {
+        width: 31%;
+        min-height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    /* Images */
+    .custom-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    /* Card text */
+    .custom-card .card-body {
+        padding: 20px;
+    }
+
+    .custom-card h3 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    /* Hover */
+    .custom-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /* =========================
+   TABLET
+========================= */
+
+    @media (max-width: 992px) {
+
+        .card-section {
+            width: 90%;
+        }
+
+        .custom-card {
+            width: 47%;
+        }
+
+        .custom-card img {
+            height: 200px;
+        }
+    }
+
+
+
+
+
 
     .card-section {
         animation: slideUp 0.8s ease-out;
@@ -328,10 +392,710 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    .container-form img{
+
+    .container-form img {
 
         width: 100%;
         height: 750px;
+
+
+
+    }
+
+
+
+    /* ================================
+   MAIN CARD SECTION
+================================ */
+
+    .card-section {
+        width: 90%;
+        max-width: 1200px;
+        margin: 15px auto 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+
+        gap: 30px;
+
+        background: #fff;
+        border-radius: 15px;
+
+        padding: 110px 150px 120px !important;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ================================
+   MAIN CARDS
+================================ */
+
+    .custom-card {
+        flex: 1 1 0;
+        width: 0;
+        min-width: 0;
+
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+
+        background: #fff;
+
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+        transition: all 0.3s ease;
+    }
+
+    .custom-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+    }
+
+    .custom-card img {
+        width: 100%;
+        height: 220px;
+
+        object-fit: cover;
+        display: block;
+    }
+
+    .custom-card .card-body {
+        padding: 20px 10px;
+    }
+
+    .custom-card h3 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+
+    /* ================================
+   FREEPIK TEXT
+================================ */
+
+    .free {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .free p {
+        margin-bottom: 0;
+    }
+
+
+    /* ================================
+   SOLAR BENEFITS SECTION
+================================ */
+
+    .fox {
+        width: 100%;
+        background: #123524;
+        background-image: url('/image/bootstrap.png');
+        height: auto;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+
+    /* Heading */
+
+    .fox h1 {
+        margin: 0;
+    }
+
+
+
+
+
+
+    /* ================================
+   BENEFIT CARDS
+================================ */
+
+    .third-section {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .benefit-card {
+        flex: 1 1 0;
+        width: 0;
+        min-width: 0;
+
+        background: #fff;
+
+        border-radius: 12px;
+        overflow: hidden;
+
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
+
+        transition: all 0.3s ease;
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-7px);
+    }
+
+    .benefit-card .list-group-item {
+        padding: 18px 15px;
+
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .benefit-card i {
+        margin-right: 8px;
+        font-size: 18px;
+    }
+
+    .text-yellow {
+        color: #f5c518;
+    }
+
+
+    /* ================================
+   TABLET
+================================ */
+
+    @media (max-width: 992px) {
+
+        .card-section {
+            width: 94%;
+            gap: 18px;
+            padding: 40px 20px 25px !important;
+        }
+
+        .custom-card img {
+            height: 180px;
+        }
+
+        .custom-card h3 {
+            font-size: 18px;
+        }
+
+        .third-section {
+            width: 94%;
+            gap: 18px;
+        }
+
+        .benefit-card .list-group-item {
+            font-size: 14px;
+            padding: 15px 10px;
+        }
+    }
+
+
+    /* ================================
+   MOBILE
+================================ */
+
+    @media (max-width: 768px) {
+
+        /* Main cards */
+        .card-section {
+            width: 92%;
+
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            align-items: center;
+
+            gap: 20px;
+
+            padding: 30px 15px 25px !important;
+        }
+
+        .custom-card {
+            width: 100%;
+            max-width: 420px;
+
+            flex: none;
+        }
+
+        .custom-card img {
+            height: 220px;
+        }
+
+        .custom-card h3 {
+            font-size: 20px;
+        }
+
+
+        /* Solar Benefits */
+
+        .fox {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .fox h1 {
+            font-size: 32px !important;
+            padding-top: 35px !important;
+            padding-bottom: 35px !important;
+        }
+
+        .third-section {
+            width: 92%;
+
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        .benefit-card {
+            width: 100%;
+            max-width: 420px;
+
+            flex: none;
+        }
+
+        .benefit-card .list-group-item {
+
+            font-size: 15px;
+        }
+    }
+
+
+    /* ================================
+   SMALL MOBILE
+================================ */
+
+    @media (max-width: 480px) {
+
+        .card-section {
+            width: 95%;
+            padding: 25px 12px 20px !important;
+        }
+
+        .custom-card {
+            max-width: 100%;
+        }
+
+        .custom-card img {
+            height: 190px;
+        }
+
+        .custom-card h3 {
+            font-size: 18px;
+        }
+
+        .free p,
+        .free1 p {
+            font-size: 13px;
+        }
+
+        .fox h1 {
+            font-size: 27px !important;
+        }
+
+        .third-section {
+            width: 95%;
+        }
+
+        .benefit-card {
+            max-width: 100%;
+        }
+    }
+
+
+    /* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+    @media (max-width: 576px) {
+
+        .box {
+            width: 100% !important;
+            padding: 30px 15px !important;
+            overflow: hidden;
+        }
+
+        /* Heading */
+        .box h1 {
+            font-size: 30px !important;
+            line-height: 1.2;
+        }
+
+        /* Paragraph */
+        .box>p {
+            font-size: 16px !important;
+            line-height: 1.6;
+            padding: 0 5px;
+        }
+
+        /* Remove <br> effect on mobile */
+        .box>p br {
+            display: none;
+        }
+
+        /* Cards row */
+        .box .row {
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* One card per row */
+        .box .row .col {
+            width: 100% !important;
+            max-width: 100% !important;
+            flex: 0 0 100% !important;
+            padding: 0 !important;
+            margin-bottom: 20px;
+        }
+
+        /* All cards */
+        .box .card1,
+        .box .card2,
+        .box .card3,
+        .box .card4,
+        .box .card5,
+        .box .card6 {
+            width: 100% !important;
+            height: 400px !important;
+            margin: 0 !important;
+            border-radius: 10px;
+        }
+
+        /* Card content */
+        .card1-body,
+        .card2-body,
+        .card3-body,
+        .card4-body,
+        .card5-body,
+        .card6-body {
+            padding: 25px !important;
+        }
+
+        /* Card headings */
+        .box .card-title {
+            font-size: 24px !important;
+            line-height: 1.3;
+        }
+
+        /* Card paragraph */
+        .box .card-text {
+            font-size: 16px !important;
+        }
+
+        /* Border line */
+        .box .border {
+            width: 50% !important;
+        }
+
+        /* Freepik */
+        .box .free {
+            padding-top: 20px !important;
+        }
+    }
+
+    /* =========================
+   CONTACT SECTION
+========================= */
+
+    .container-form {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .vox {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 60px;
+    }
+
+    /* IMAGE */
+
+    .image-section {
+        width: 55%;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        display: block;
+        border-radius: 10px;
+    }
+
+    /* FORM SECTION */
+
+    .vox .col-lg-4 {
+        width: 40%;
+        padding-left: 0 !important;
+    }
+
+    .vox h1 {
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 14px 15px;
+        border-radius: 5px;
+    }
+
+    textarea.form-control {
+        resize: vertical;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 14px;
+        font-weight: bold;
+    }
+
+    /* =========================
+   TABLET
+========================= */
+
+    @media (max-width: 991px) {
+
+        .vox {
+            gap: 30px;
+        }
+
+        .image-section {
+            width: 50%;
+        }
+
+        .vox .col-lg-4 {
+            width: 50%;
+        }
+
+        .image-section img {
+            height: 550px;
+        }
+
+        .vox h1 {
+            font-size: 50px !important;
+        }
+    }
+
+    /* =========================
+   MOBILE
+========================= */
+
+    @media (max-width: 576px) {
+
+        .container-form {
+            width: 100% !important;
+            padding: 30px 15px !important;
+        }
+
+        .vox {
+            width: 100% !important;
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 30px;
+        }
+
+        /* IMAGE FULL WIDTH */
+
+        .image-section {
+            width: 100% !important;
+        }
+
+        .image-section img {
+            width: 100% !important;
+            height: 350px !important;
+
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* FORM FULL WIDTH */
+
+        .vox .col-lg-4 {
+            width: 100% !important;
+            max-width: 100% !important;
+
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        /* HEADING */
+
+        .vox h1 {
+            font-size: 38px !important;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* INPUT */
+
+        .form-control {
+            width: 100% !important;
+            font-size: 16px;
+            padding: 13px;
+        }
+
+        /* TEXTAREA */
+
+        textarea.form-control {
+            min-height: 150px;
+        }
+
+        /* CHECKBOX */
+
+        .form-check {
+            font-size: 14px;
+        }
+
+        /* BUTTON */
+
+        .submit-btn {
+            width: 100% !important;
+            padding: 14px;
+        }
+
+        /* FREEPIK */
+
+        .free1 {
+            padding-top: 30px !important;
+            padding-bottom: 10px !important;
+            text-align: center;
+        }
+
+        .free1 p {
+            font-size: 14px;
+        }
+    }
+
+
+    /* =========================
+   OUR PROJECTS
+========================= */
+
+    .projects-section {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* Images equal width + height */
+
+    .project-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+
+        transition: 0.3s ease;
+    }
+
+    /* Hover */
+
+    .project-img:hover {
+        transform: scale(1.03);
+    }
+
+
+    /* =========================
+   TABLET
+========================= */
+
+    @media (max-width: 991px) {
+
+        .project-img {
+            width: 100%;
+            height: 250px;
+        }
+
+    }
+
+
+    /* =========================
+   MOBILE
+========================= */
+
+    @media (max-width: 576px) {
+
+        .projects-section {
+            width: 100% !important;
+            max-width: 100% !important;
+
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .projects-section .row {
+            width: 100% !important;
+            margin: 0 !important;
+        }
+
+        /* 1 image per row */
+
+        .projects-section .col-12 {
+            width: 100% !important;
+            max-width: 100% !important;
+
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            margin-bottom: 10px;
+        }
+
+        /* Equal image size */
+
+        .project-img {
+            width: 100% !important;
+            height: 250px !important;
+
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Heading */
+
+        .projects-section h1 {
+            font-size: 30px !important;
+        }
+
+        /* Paragraph */
+
+        .project-description {
+            font-size: 16px !important;
+            line-height: 1.5;
+            padding: 10px 0 !important;
+        }
+
+        /* Freepik */
+
+        .free {
+            padding-top: 25px !important;
+        }
+
     }
 </style>
 
@@ -413,303 +1177,354 @@
 
 
 
-        <div class="card-section d-flex justify-content-evenly flex-wraps bg-white mx-auto
-         pt-5 custom-box animate-up w-75 h-75 pb-3 mt-3">
+        <!-- SECOND SECTION -->
+        <div class="card-section bg-white mx-auto pt-5 pb-3 mt-3 custom-box animate-up">
 
-            <div class="card text-center w-25 h-25 flex-wraps  ">
-                <img src="image\business-person-planning-alterna.jpg " class="card-img-top" alt="...">
+            <!-- Card 1 -->
+            <div class="card custom-card text-center">
+                <img src="image/business-person-planning-alterna.jpg" class="card-img-top" alt="Experienced Team">
+
                 <div class="card-body">
                     <h3 class="card-text">Experienced Team</h3>
                 </div>
             </div>
 
+            <!-- Card 2 -->
+            <div class="card custom-card text-center">
+                <img src="image/656.jpg" class="card-img-top" alt="Modern Equipment">
 
-
-            <div class="card  w-25 h-25 flex-wraps">
-                <img src="image/656.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h3 class="card-text">Modern Equipment</h3>
                 </div>
             </div>
 
+            <!-- Card 3 -->
+            <div class="card custom-card text-center">
+                <img src="image/5453.jpg" class="card-img-top" alt="Smart Methods">
 
-
-
-
-            <div class="card  w-25 h-25  flex-wraps">
-                <img src="image/5453.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h3 class="card-text ">Smart Methods</h3>
+                    <h3 class="card-text">Smart Methods</h3>
                 </div>
             </div>
 
         </div>
 
+        <div class="free text-center pb-5">
+            <p class="text-black fw-bolder">
+                Images from
+                <a class="text-primary" href="https://www.magnific.com/">
+                    freepik
+                </a>
+            </p>
+        </div>
 
-        <div class="free flex-wraps pb-5">
-            <p class="text-black fw-bolder">Images from <a class="text-primary"
-                    href="https://www.magnific.com/">freepik</a></p>
 
+        <!-- THIRD SECTION -->
+        <div class="fox w-100">
+
+            <h1 class="text-center text-white fs-1 py-5">
+                Solar Benefits
+            </h1>
+
+            <div class="third-section">
+
+                <!-- Benefit Card 1 -->
+                <div class="benefit-card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="bi bi-plus text-yellow"></i>
+                            Get Future Ready
+                        </li>
+
+                        <li class="list-group-item">
+                            <i class="bi bi-plus"></i>
+                            Preserve Our Home
+                        </li>
+
+                        <li class="list-group-item">
+                            <i class="bi bi-plus"></i>
+                            Maximum Usage
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 2 -->
+                <div class="benefit-card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="bi bi-plus text-yellow"></i>
+                            Solar For Every Budget
+                        </li>
+
+                        <li class="list-group-item">
+                            <i class="bi bi-plus"></i>
+                            Say No To Blackouts
+                        </li>
+
+                        <li class="list-group-item">
+                            <i class="bi bi-plus"></i>
+                            Save More
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 3 -->
+                <div class="benefit-card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="bi bi-plus text-yellow"></i>
+                            Control Your Energy
+                        </li>
+
+                        <li class="list-group-item">
+                            <i class="bi bi-plus"></i>
+                            Non-Maintenance
+                        </li>
+
+                        <li class="list-group-item">
+                            <i class="bi bi-plus"></i>
+                            Renewable Energy
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="free1 text-center py-5">
+                <p class="text-white fw-bolder fst-italic">
+                    Images from
+                    <a class="text-white fst-italic" href="https://www.magnific.com/">
+                        freepik
+                    </a>
+                </p>
+            </div>
 
         </div>
 
 
-    </div>
+        <!--Fourth Section-->
+        <div class="container w-100 py-5 text-center projects-section">
 
-    <!--THIRD-SECTION-->
-    <div class="fox w-100">
-        <h1 class="text-center text-white fs-1 py-5">Solar Benefits</h1>
-        <div class="third-section">
-            <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="bi bi-plus text-yellow"></i>Get Future Ready</li>
-                    <li class="list-group-item"><i class="bi bi-plus"></i>Preserve Our Home</li>
-                    <li class="list-group-item"><i class="bi bi-plus"></i>Maximum Usage</li>
-                </ul>
+            <h1 class="fs-1">Our Projects</h1>
+
+            <p class="fs-3 p-3 project-description">
+                Sample text. Click to select the text box. Click again or double click
+                to start editing the text.
+            </p>
+
+            <div class="row g-3">
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/1.jpg" class="project-img rounded" alt="Project 1">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/2.jpg" class="project-img rounded" alt="Project 2">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/3.jpg" class="project-img rounded" alt="Project 3">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/4.jpg" class="project-img rounded" alt="Project 4">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/5.jpg" class="project-img rounded" alt="Project 5">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/6.jpg" class="project-img rounded" alt="Project 6">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/7.jpg" class="project-img rounded" alt="Project 7">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/8.jpg" class="project-img rounded" alt="Project 8">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="image/9.jpg" class="project-img rounded" alt="Project 9">
+                </div>
 
             </div>
-            <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="bi bi-plus text-yellow"></i>SolarForEveryBudget</li>
-                    <li class="list-group-item"><i class="bi bi-plus"></i>Say No To Blackouts</li>
-                    <li class="list-group-item"><i class="bi bi-plus"></i>Save More</li>
-                </ul>
 
-            </div>
-            <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="bi bi-plus text-yellow"></i>Control Your Energy</li>
-                    <li class="list-group-item"><i class="bi bi-plus"></i>Non-Maintenence</li>
-                    <li class="list-group-item"><i class="bi bi-plus"></i>Renewable Energy</li>
-                </ul>
-            </div>
-        </div>
-        <div class="free1 text-center py-5  ">
-            <p class="text-white fw-bolder fst-italic ">Images from <a class="text-white fst-italic"
-                    href="https://www.magnific.com/">freepik</a></p>
-        </div>
-    </div>
-
-
-
-    <!--Fourth Section-->
-    <div class="container w-100 py-5 text-center">
-        <h1 class="fs-1">Our Projects</h1>
-        <p class="fs-3 p-3">
-            Sample text. Click to select the text box. Click again or double click
-            to start editing the text.
-        </p>
-
-        <div class="row g-2 w-100">
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/1.jpg" class="img-fluid rounded w-100" alt="" >
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/2.jpg" class="img-fluid rounded w-100" alt="">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/3.jpg" class="img-fluid rounded w-100" alt="">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/4.jpg" class="img-fluid rounded w-100" alt="">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/5.jpg" class="img-fluid rounded w-100" alt="">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/6.jpg" class="img-fluid rounded w-100" alt="">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/7.jpg" class="img-fluid rounded w-100" alt="">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/8.jpg" class="img-fluid rounded w-100" alt="">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="image/9.jpg" class="img-fluid rounded  w-100" alt="">
+            <div class="free pt-5">
+                <p class="text-black fw-bolder">
+                    Images from
+                    <a class="text-primary" href="https://www.magnific.com/">
+                        Freepik
+                    </a>
+                </p>
             </div>
 
         </div>
 
-        <div class="free flex-wraps pt-5">
-            <p class="text-black fw-bolder">Images from <a class="text-primary"
-                    href="https://www.magnific.com/">freepik</a></p>
-
-
-        </div>
-
-    </div>
 
 
 
+        <!--fifth-section-->
+        <div class="box text-center w-100">
 
-    <!--fifth-section-->
-    <div class="box text-center w-100">
+
+            <h1 class="fs-1">Installing Benefits</h1>
+            <p class="fs-3">
+                Harnessing energy from the sun and converting it to clean energy to power your home — or even a <br>
+                car — reduces your carbon footprint and saves on energy costs for years to come.
+            </p>
+
+            <div class="row w-75 row-cols-md-3 g-2  align-items-center" style="margin-left:15%;">
+                <div class="col">
+                    <div class="card1  w-75" style="height: 600px;">
+
+                        <div class="card1-body text-start ">
+                            <div class="border  w-50 text-primary "></div>
+                            <h1 class="card-title fs-3 fw-bold text-white pt-3">Cost Savings</h1>
+                            <p class="card-text text-white">Ut enim ad minim veniam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card2  w-75 " style="height: 600px;">
+
+                        <div class="card2-body text-start">
+                            <div class="border  w-50 "></div>
+                            <h1 class="card-title fs-3 fw-bold text-white pt-3">Increase Home Value</h1>
+                            <p class="card-text text-white">Ut enim ad minim veniam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card3  w-75 fw-bold " style="height: 600px;">
 
 
-        <h1 class="fs-1">Installing Benefits</h1>
-        <p class="fs-3">
-            Harnessing energy from the sun and converting it to clean energy to power your home — or even a <br>
-            car — reduces your carbon footprint and saves on energy costs for years to come.
-        </p>
+                        <div class="card3-body text-start">
+                            <div class="border  w-50 fw-bold "></div>
+                            <h1 class="card-title fs-3  text-white pt-3">Solar Works Everywhere</h1>
+                            <p class="card-text text-white">Ut enim ad minim veniam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card4  w-75 " style="height: 600px;">
 
-        <div class="row w-75 row-cols-md-3 g-2  align-items-center" style="margin-left:15%;">
-            <div class="col">
-                <div class="card1  w-75" style="height: 600px;">
+                        <div class="card4-body text-start">
+                            <div class="border  w-50 "></div>
+                            <h1 class="card-title fs-3 fw-bold text-white pt-3">Earn Tax Credits & Rebates</h1>
+                            <p class="card-text text-white">Ut enim ad minim veniam</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="card1-body text-start ">
-                        <div class="border  w-50 text-primary "></div>
-                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Cost Savings</h1>
-                        <p class="card-text text-white">Ut enim ad minim veniam</p>
+                <div class="col ">
+                    <div class="card5  w-75" style="height: 600px;">
+
+                        <div class="card5-body  text-start">
+                            <div class="border  w-50 "></div>
+                            <h1 class="card-title fs-3 fw-bold text-white pt-3">Help The ​​Environment</h1>
+                            <p class="card-text text-white">Ut enim ad minim veniam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="card6  w-75" style="height: 600px;">
+
+                        <div class="card6-body text-start">
+                            <div class="border  w-50 "></div>
+                            <h1 class="card-title fs-3 fw-bold text-white pt-3">Harnessing energy</h1>
+                            <p class="card-text text-white">Ut enim ad minim veniam</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card2  w-75 " style="height: 600px;">
+            <div class="free flex-wraps pt-5">
+                <p class="text-black fw-bolder">Images from <a class="text-primary"
+                        href="https://www.magnific.com/">freepik</a></p>
 
-                    <div class="card2-body text-start">
-                        <div class="border  w-50 "></div>
-                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Increase Home Value</h1>
-                        <p class="card-text text-white">Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col ">
-                <div class="card3  w-75 fw-bold " style="height: 600px;">
-
-
-                    <div class="card3-body text-start">
-                        <div class="border  w-50 fw-bold "></div>
-                        <h1 class="card-title fs-3  text-white pt-3">Solar Works Everywhere</h1>
-                        <p class="card-text text-white">Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card4  w-75 " style="height: 600px;">
-
-                    <div class="card4-body text-start">
-                        <div class="border  w-50 "></div>
-                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Earn Tax Credits & Rebates</h1>
-                        <p class="card-text text-white">Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col ">
-                <div class="card5  w-75" style="height: 600px;">
-
-                    <div class="card5-body  text-start">
-                        <div class="border  w-50 "></div>
-                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Help The ​​Environment</h1>
-                        <p class="card-text text-white">Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-
-                <div class="card6  w-75" style="height: 600px;">
-
-                    <div class="card6-body text-start">
-                        <div class="border  w-50 "></div>
-                        <h1 class="card-title fs-3 fw-bold text-white pt-3">Harnessing energy</h1>
-                        <p class="card-text text-white">Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="free flex-wraps pt-5">
-            <p class="text-black fw-bolder">Images from <a class="text-primary"
-                    href="https://www.magnific.com/">freepik</a></p>
-
-
-        </div>
-
-    </div>
-
-
-    <!--sixth-section-->
-    <div class="container-form w-100">
-
-        <div class="vox">
-
-            <div class="image-section">
-
-
-                <img src="image/sss.jpg" alt="">
-            </div>
-
-
-
-
-
-            <div class="col-lg-4 pl-5">
-
-                <h1 class="display-2">Contact Us</h1>
-
-                <form class="contact-form">
-
-                    <div class="mb-4">
-                        <label class="form-label">Name</label>
-                        <input type="text" class="form-control" placeholder="Enter your Name">
-                    </div>
-
-                    <div class="mb-4">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="Enter a valid email address">
-                    </div>
-
-                    <div class="mb-4">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="6"></textarea>
-                    </div>
-
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" id="check">
-                        <label class="form-check-label" for="check">
-                            I accept the
-                            <a href="#" class="text-warning text-decoration-none">
-                                Terms of Service
-                            </a>
-                        </label>
-                    </div>
-                    <div class="bodp">
-                        <button class="btn submit-btn w-100">
-                            SUBMIT
-                        </button>
-                    </div>
-                    <div class="free1  py-5  ">
-                        <p class="text-dark fw-bolder fst-italic ">Images from <a class="text-dark fst-italic"
-                                href="https://www.magnific.com/">freepik</a></p>
-                    </div>
-
-                </form>
 
             </div>
 
         </div>
-    </div>
+
+
+        <!--sixth-section-->
+        <div class="container-form w-100">
+
+            <div class="vox">
+
+                <div class="image-section">
+
+
+                    <img src="image/sss.jpg" alt="">
+                </div>
 
 
 
-    <!--footer-->
-    <div class=" footer  bg-dark text-white p-5" style="height: 300px; margin-top: 130px;">
-        <h3 class="text-center pt-3">Sample text. Click to select the Text Element.</h3>
+
+
+                <div class="col-lg-4 pl-5">
+
+                    <h1 class="display-2">Contact Us</h1>
+
+                    <form class="contact-form">
+
+                        <div class="mb-4">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your Name">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter a valid email address">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="6"></textarea>
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="check">
+                            <label class="form-check-label" for="check">
+                                I accept the
+                                <a href="#" class="text-warning text-decoration-none">
+                                    Terms of Service
+                                </a>
+                            </label>
+                        </div>
+                        <div class="bodp">
+                            <button class="btn submit-btn w-100">
+                                SUBMIT
+                            </button>
+                        </div>
+                        <div class="free1  py-5  ">
+                            <p class="text-dark fw-bolder fst-italic ">Images from <a class="text-dark fst-italic"
+                                    href="https://www.magnific.com/">freepik</a></p>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
 
 
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <!--footer-->
+        <div class=" footer  bg-dark text-white p-5" style="height: 300px; margin-top: 130px;">
+            <h3 class="text-center pt-3">Sample text. Click to select the Text Element.</h3>
+
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
