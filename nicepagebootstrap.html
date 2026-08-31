@@ -23,6 +23,8 @@
         width: 100%;
         height: 800px;
         text-align: center;
+        margin: 0%;
+
 
     }
 
@@ -35,7 +37,7 @@
 
     .fog p {
         text-align: center;
-        color: white;
+        color: rgb(2, 2, 2);
     }
 
     .fog {
@@ -82,9 +84,7 @@
     }
 
     /* Card text */
-    .custom-card .card-body {
-        padding: 20px;
-    }
+    .custom-card .card-body {}
 
     .custom-card h3 {
         font-size: 24px;
@@ -167,6 +167,7 @@
 
 
         font-style: italic;
+        color: #000;
     }
 
     .free {
@@ -241,17 +242,24 @@
     }
 
     .fox {
-
-
-        background-image: linear-gradient(rgba(6, 6, 6, 0.5), rgba(0, 0, 0, 0.5)),
-            url('/image/bg/middle.jpg');
         width: 100%;
-        height: 500px;
-        text-align: center;
-        margin-top: 300px;
+        min-height: 500px;
 
+        background-image: url("./image/26193-min.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        margin-top: 0 !important;
+        padding-top: 0;
+
+        display: block;
     }
 
+    /* Extra space remove */
+    .fox h1 {
+        margin-top: 0;
+    }
 
 
     .card1 {
@@ -807,70 +815,222 @@
         }
     }
 
+
     /* =========================
-   CONTACT SECTION
+   FULL WIDTH CONTACT
 ========================= */
 
     .container-form {
         width: 100%;
-        padding: 60px 20px;
+        padding: 0;
+        margin: 0;
     }
 
     .vox {
         width: 100%;
-        max-width: 1200px;
-        margin: auto;
+        max-width: none;
+        margin: 0;
 
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: stretch;
 
-        gap: 60px;
+        background: #fff;
     }
 
-    /* IMAGE */
+
+    /* =========================
+   IMAGE 50%
+========================= */
 
     .image-section {
-        width: 55%;
+        width: 50%;
+        height: 700px;
+        overflow: hidden;
     }
 
     .image-section img {
         width: 100%;
-        height: 600px;
-        object-fit: cover;
+        height: 100%;
         display: block;
-        border-radius: 10px;
+
+        object-fit: cover;
+        object-position: center;
     }
 
-    /* FORM SECTION */
 
-    .vox .col-lg-4 {
-        width: 40%;
-        padding-left: 0 !important;
+    /* =========================
+   FORM 50%
+========================= */
+
+    .form-section {
+        width: 50%;
+        padding: 50px 60px;
+        box-sizing: border-box;
     }
 
-    .vox h1 {
-        margin-bottom: 30px;
+
+    /* Heading */
+
+    .form-section h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 400;
     }
+
+
+    /* Form */
 
     .contact-form {
         width: 100%;
     }
 
+    .contact-form .mb-4 {
+        width: 100%;
+    }
+
+    .form-label {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
     .form-control {
         width: 100%;
-        padding: 14px 15px;
-        border-radius: 5px;
+        border: none;
+        border-bottom: 2px solid #222;
+        border-radius: 0;
+
+        padding: 12px 0;
+        font-size: 16px;
+
+        box-shadow: none;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-bottom: 2px solid #000;
+        box-shadow: none;
     }
 
     textarea.form-control {
+        min-height: 150px;
         resize: vertical;
     }
 
+
+    /* Checkbox */
+
+    .form-check {
+        margin-top: 20px;
+    }
+
+    .form-check-input {
+        margin-right: 8px;
+    }
+
+
+    /* Button */
+
     .submit-btn {
         width: 100%;
-        padding: 14px;
+        padding: 15px;
+        border: none;
+        border-radius: 0;
+
+        background: #ffc107;
+        color: #000;
+
         font-weight: bold;
+    }
+
+    .submit-btn:hover {
+        background: #000;
+        color: #fff;
+    }
+
+
+    /* =========================
+   TABLET
+========================= */
+
+    @media (max-width: 991px) {
+
+        .image-section {
+            height: 650px;
+        }
+
+        .form-section {
+            padding: 40px 35px;
+        }
+
+        .form-section h1 {
+            font-size: 50px;
+        }
+    }
+
+
+    /* =========================
+   MOBILE
+========================= */
+
+    @media (max-width: 767px) {
+
+        .vox {
+            flex-direction: column;
+        }
+
+        .image-section {
+            width: 100%;
+            height: 350px;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .form-section {
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        .form-section h1 {
+            font-size: 40px;
+            margin-bottom: 35px;
+        }
+
+        .form-label {
+            text-align: left;
+        }
+
+        .form-control {
+            font-size: 15px;
+        }
+    }
+
+
+    /* =========================
+   SMALL MOBILE
+========================= */
+
+    @media (max-width: 480px) {
+
+        .image-section {
+            height: 280px;
+        }
+
+        .image-section img {
+            height: 280px;
+        }
+
+        .form-section {
+            padding: 30px 15px;
+        }
+
+        .form-section h1 {
+            font-size: 34px;
+        }
     }
 
     /* =========================
@@ -1149,12 +1309,12 @@
     </nav>
 
     <!--SECOND-SECTION-->
-    <div class="second-section justify-content-center flex-wraps w-100 px-0">
+    <div class="second-section justify-content-center flex-wraps w-100">
 
 
         <div class="fog">
 
-            <h1 class="text-white fs-1"> We're Leaders <br>
+            <h1 class="text-white "> We're Leaders <br>
                 in Industrial Business
             </h1>
             <p class="text-white fs-5">We specialize in a wide variety of solar installation and our experts are ready
@@ -1220,7 +1380,7 @@
 
 
         <!-- THIRD SECTION -->
-        <div class="fox w-100" style="background-image: url('image/26193-min.jpg');">
+        <div class="fox w-100 " style="background-image: url('image/26193-min.jpg');">
 
             <h1 class="text-center text-white fs-1 py-5">
                 Solar Benefits
@@ -1291,9 +1451,9 @@
             </div>
 
             <div class="free1 text-center py-5">
-                <p class="text-white fw-bolder fst-italic">
+                <p class="text-black fw-bolder fst-italic">
                     Images from
-                    <a class="text-white fst-italic" href="https://www.magnific.com/">
+                    <a class="text-blue fst-italic" href="https://www.magnific.com/">
                         freepik
                     </a>
                 </p>
@@ -1303,7 +1463,7 @@
 
 
         <!--Fourth Section-->
-        <div class="container w-100 py-5 text-center projects-section">
+        <div class="container w-100 text-center projects-section py-5">
 
             <h1 class="fs-1">Our Projects</h1>
 
@@ -1452,7 +1612,7 @@
 
 
         <!--sixth-section-->
-        <div class="container-form w-100">
+        <div class="container-form w-100 mt-5">
 
             <div class="vox">
 
@@ -1502,7 +1662,7 @@
                             </button>
                         </div>
                         <div class="free1  py-5  ">
-                            <p class="text-dark fw-bolder fst-italic ">Images from <a class="text-dark fst-italic"
+                            <p class="text-dark fw-bolder fst-italic ">Images from <a class="text-blue fst-italic"
                                     href="https://www.magnific.com/">freepik</a></p>
                         </div>
 
